@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  text-decoration: none !important;
+  font-family: "Manrope", sans-serif;
+}
+
+:root {
+  font-weight: 400;
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+  background-color: var(--DarkBlue);
+}
+
+.card {
+  background-color: var(--DarkGrayishBlue);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25vw;
+  min-height: 30%;
+  text-align: center;
+}
+.card_body {
+  letter-spacing: 3px;
+  color: var(--NeonGreen);
+}
+.card_text {
+  color: var(--LightCyan);
+  font-weight: bold;
+}
+
+.divider_desktop {
+  max-width: 20rem;
+  position: absolute;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  bottom: 20%;
+}
+.divider_mobile {
+  max-width: 15rem;
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 20%;
+}
+.icon_dice {
+  background-color: var(--NeonGreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+  bottom: -19%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s;
+  position: absolute;
+}
+
+.icon_dice:hover {
+  filter: brightness(100%);
+  transition: 0.4s ease-in;
+  box-shadow: 0 0 12px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 435px) {
+  .card {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    width: 22rem;
+    min-height: 15rem;
+    padding: 5px;
+    margin-top: 7rem;
+  }
+  .card_text{
+    padding: 2px;
+  }
+  .icon_dice {
+    bottom: -19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+  }
+  .divider_mobile{
+    display: block;
+  }
+}
+@media (max-width: 395px) {
+  .card {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    width: 21rem;
+    min-height: 16rem;
+    padding: 3px;
+    margin-top: 5rem;
+  }
+  .card_text{
+    padding: 2px;
+  }
+  .icon_dice {
+    bottom: -21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+  }
+  .divider_desktop{
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .card {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    width: 18rem;
+    min-height: 15rem;
+    padding: 3px;
+    margin-top: 3rem;
+  }
+  .card_text{
+    padding: 2px;
+  }
+  .icon_dice {
+    bottom: -19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+  }
+  .divider_desktop{
+    display: none;
+  }
+  
+}
+
+
