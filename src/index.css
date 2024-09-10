@@ -148,4 +148,28 @@ body {
   
 }
 
+@media (max-width: 840px) {
+  .card {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    width: 23rem;
+    min-height: 15rem;
+    padding: 5px;
+    margin-top: 15rem;
+  }
+  .card_text{
+    padding: 2px;
+  }
+  .icon_dice {
+    bottom: -19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+  }
+  .divider_mobile{
+    display: none;
+  }
+}
+
 
